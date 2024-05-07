@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+   font-family: 'Poppins', sans-serif;
+}
+ header
+ {
+    display: flex;
+    width: 90%;
+    margin:auto;
+    align-items: center;
+    height: 10vh;
+   
+ }
+ 
+ .logo-container, 
+ .nav-links ,
+ .cart{
+display: flex;
+
+ }
+
+ .logo-container{
+    
+    flex: 1;
+
+ }
+ .logo{
+   font-weight: 400;
+   margin: 5px;
+ }
+ nav{
+    
+    flex: 1;
+ }
+ .nav-links{
+   justify-content: space-around;
+   list-style: none;
+ }
+ .nav-links{
+   color: 5f5f79;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ .cart{
+    
+    flex: 1;
+    justify-content: flex-end;
+ }
+
+ .presentation{
+   display: flex;
+   width: 90%;
+   margin: auto;
+   min-height: 80vh;
+   align-items: center;
+ }
+
+ .introduction{
+   flex: 1;
+ }
+ .intro-text h1{
+   font-size: 44px;
+   font-weight: 500;
+   background: linear-gradient(to right, #494964 , #6f6f89);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .intro-text p{
+   margin-top: 5px;
+   font-size: 22px;
+   color: #585772;
+ }
+
+ .cta{
+   padding: 50px 0px 0px 0px;
+ }
+ .cta-select{
+   border: 2px solid #c36cbb;
+   background: transparent;
+   color: #c36cbb;
+   width: 150px;
+   height: 50px;
+   cursor: pointer;
+   font-size: 16px;
+ }
+ .cta-add{
+   background: #c36cbb;
+   width: 150px;
+   height: 50px;
+   cursor: pointer;
+   font-size: 16px;
+   border: none;
+   color: white;
+   margin: 30px 0px 0px 0px;
+ }
+.cover{
+   flex: 1
+}
+.cover img{
+   height: 60vh;
+   filter: drop-shadow(0px 5px 3px black);
+   animation: drop 1.5s ease;
+}
+.big-circle{
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   z-index: -1;
+   opacity: 0.5;
+   height: 80%;
+}
+.medium-circle{
+   position: absolute;
+   opacity: 0.4;
+   top: 30%;
+   right: 30%;
+   z-index: -1;
+   height: 60%;
+}
+.small-circle{
+   position: absolute;
+   bottom: 0%;
+   left: 20%;
+   z-index: -1;
+   height: 40%;
+}
+.laptop-select{
+   width: 15%;
+   display: flex;
+   justify-content: space-around;
+   position: absolute;
+   right: 25%;
+}
+@keyframes drop{
+   0%
+   {
+      opacity: 0;
+      transform: translateY(-80px);
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
